@@ -1,0 +1,335 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.section-container{
+  display: flex;
+  position: relative;
+  gap: 20rem;
+  height: 100vh;
+  width: 100%;
+}
+
+.background-container{
+  background-image: url(bg-main-desktop.png);
+  width: 550px;
+  height: 100%;
+  background-position: left;
+  background-size: cover;
+  position: relative;
+}
+.front{
+  background-image: url(bg-card-front.png);
+  background-repeat: no-repeat;
+  background-size: 400px;
+  height: 100%;
+  width: 500px;
+  position: absolute;
+  top: 9rem;
+  left: 17rem;
+}
+.back{
+  background-image: url(bg-card-back.png);
+  background-repeat: no-repeat;
+  background-size: 400px;
+  height: 100%;
+  position: absolute;
+  top: 23rem;
+  left: 24rem;
+  width: 500px;
+}
+
+.logo{
+  width: 60px;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+.placeholder{
+    font-size: 15px;
+   color: white;
+   letter-spacing: 1px;
+   margin-left: 2rem;
+   padding-top: 2.5rem;
+}
+h1{
+  font-size: 18px;
+}
+.card-details{
+    display: flex;
+    gap: 6rem;
+    padding-top: 2rem;
+}
+.cad-name{
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: white;
+    margin-left: 2rem;
+}
+span{
+    color: white;
+    font-size: 14px;
+}
+.exp-container{
+  display: flex;
+}
+.contact-container{
+     margin-right: 9rem;  
+  position: relative;
+  padding-top: 11rem;
+  display: none;
+}
+.input-container{
+  margin: 2rem;
+  position: relative;
+}
+input:focus{
+  outline: none;
+  border:  1px solid hsl(279, 6%, 55%);
+  }
+.holder-name{
+  font-size: 18px;
+  border: 1px solid hsl(270, 3%, 87%);
+  padding: 1vh 6vw;
+  transition: 0.2s;
+  text-align: center;
+  border-radius: 9px;
+  margin-top: 0.3rem;
+}
+.label-name{
+  font-size: 13px;
+  font-weight:bolder ;
+  letter-spacing: 1px;
+  position: absolute;
+  top: -1rem;
+  left: 0.2rem;
+}
+.label-number{
+  font-size: 13px;
+  font-weight:bolder ;
+  letter-spacing: 1px;
+  position: absolute;
+  top: -1rem;
+  left: 0.2rem;
+}
+.holder-num{
+  margin-top: 0.3rem;
+  border: 1px solid hsl(270, 3%, 87%);
+  padding: 1vh 6vw;
+  transition: 0.2s;
+  text-align: center;
+  border-radius: 9px;
+  font-size: 18px;
+}
+.display{
+  display: flex;
+}
+.holder-mon{
+  margin-top: 0.3rem;
+  margin-left: 1.5rem;
+  width: 50%;
+  padding: 10px;
+  border-radius: 9px;
+  transition: 0.2s;
+  text-align: center;
+  border: 1px solid hsl(270, 3%, 87%);
+}
+.card_exp{
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-weight:bolder ;
+  margin-left: 3rem;
+  position: relative;
+}
+.holder-year{
+  margin-top: 0.3rem;
+  width: 50%;
+  padding: 10px;
+  border-radius: 9px;
+  transition: 0.2s;
+  text-align: center;
+  border: 1px solid hsl(270, 3%, 87%);
+  position: relative;
+  right: 2.5rem;
+}
+ 
+.holder-cvc{
+   margin-top: 0.3rem;
+  width: 70%;
+  padding: 10px;
+  border-radius: 9px;
+  transition: 0.2s;
+  text-align: center;
+  border: 1px solid hsl(270, 3%, 87%);
+  position: relative;
+  right: 4rem;
+}
+.cvc-label{
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight:bolder ;
+ position: relative;
+ right: 2rem;
+ top: -1rem;
+}
+.exp-container{
+  margin-left: 1rem;
+}
+input::placeholder{
+  font-size: 12px;
+  text-align: left;
+  color: hsl(270, 3%, 87%);
+}
+.error-el,
+.error-number,
+.error-mm,
+.error-cvc{
+  color: red;
+   display: none; 
+   font-size: 12px;
+}
+.confirm-btn{
+  text-align: center;
+  margin-top: 2rem;
+}
+.img-complete{
+  text-align: center;
+}
+.confirm{
+  background-color: hsl(278, 68%, 11%);
+  color: white;
+text-align: center;
+padding: 2vh 13vw;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+} 
+ .container{
+  display: block;
+} 
+.message{
+  display: none;
+}
+h4{
+  text-align: center;
+}
+.desc{
+  text-align: center;
+}
+
+@media screen and (max-width: 768px){
+  .section-container{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+  }
+.background-container{
+  background-image: url(bg-main-mobile.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 100%;
+}
+.front{
+  background-image: url(bg-card-front.png);
+  background-repeat: no-repeat;
+  background-size: 400px;
+  height: 400px;
+  width: 400px;
+  z-index: 1;
+  position:relative;
+  top: 14rem;
+  left: 4rem;
+}
+.back{
+  background-image: url(bg-card-back.png);
+  background-repeat: no-repeat;
+  background-size: 400px;
+  height: 400px;
+  position: absolute;
+  top: 5rem;
+  left: 7rem;
+  width: 400px;
+}
+.holder-name{
+  padding: 2vh 25vw;
+}
+.holder-num{
+  padding: 2vh 25vw;
+}
+.confirm{
+padding: 3vh 39vw;
+} 
+}
+
+
+ @media screen and (max-width: 425px){
+ 
+  .background-container{
+    background-image: url(bg-main-mobile.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 280px;
+    width: 100%;
+  }
+  .front{
+    background-image: url(bg-card-front.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    height: 300px;
+    width: 300px;
+    z-index: 1;
+    position:relative;
+    top: 14rem;
+    left: 1rem;
+  }
+  .back{
+    background-image: url(bg-card-back.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    height: 300px;
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 375px){
+  .background-container{
+    background-image: url(bg-main-mobile.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 240px;
+    width: 100%;
+  }
+  .front{
+    background-image: url(bg-card-front.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    height: 300px;
+    width: 300px;
+    z-index: 1;
+    position:relative;
+    top: 14rem;
+    left: 1rem;
+  }
+  .back{
+    background-image: url(bg-card-back.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    height: 300px;
+    position: absolute;
+    top: 5rem;
+    left: 3rem;
+    width: 300px;
+  }
+} 
